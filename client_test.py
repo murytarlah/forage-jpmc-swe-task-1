@@ -23,7 +23,11 @@ class ClientTest(unittest.TestCase):
 
   """ ------------ Add more unit tests ------------ """
 
-
+  def test_getRatio_priceBZero(self):
+    price_a = 100
+    price_b = 0
+    self.assertIsNone(getRatio(price_a, price_b))
+    
 
 if __name__ == '__main__':
     unittest.main()
